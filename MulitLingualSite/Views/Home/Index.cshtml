@@ -1,0 +1,9 @@
+﻿@{ ViewBag.Title = "Home Page";
+    var languages = HttpContext.Current.Request.UserLanguages;
+    var ty = HttpContext.Current.Request.Headers["Accept-Language"]; }
+
+<div>
+    <ul>
+        @ty
+    </ul>
+</div>
